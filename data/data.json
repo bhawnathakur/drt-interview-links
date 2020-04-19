@@ -1,6 +1,5 @@
 {
   "links": [],
-
   "courses": [
     {
       "id": 1,
@@ -11,7 +10,7 @@
     },
     {
       "id": 2,
-      "title": "Git",
+      "title": "Gitpp",
       "duration": 3,
       "duration-unit": "day",
       "description": "Git and GitHub"
@@ -26,16 +25,9 @@
     {
       "id": 4,
       "title": "Java",
-      "duration": 5,
+      "duration": "5",
       "duration-unit": "day",
       "description": "Intro to Java"
-    },
-    {
-      "id": 5,
-      "title": "Node.js",
-      "duration": 5,
-      "duration-unit": "day",
-      "description": "Intro to Node.js"
     }
   ]
 }

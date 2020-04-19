@@ -1,0 +1,7 @@
+<th scope="row"> {{course.id}}</th>
+<td>{{course.title}}</td>
+<td>{{course.duration}}</td>
+<td>{{course['duration-unit']}}</td>
+<td>{{course.description}}</td>
+<td><button (click)="edit(course.id)" class="btb btn-primary">Edit</button><button (click)="delete(course.id)"
+    style="margin-left: 5px;" class="btb btn-danger">Delete</button></td>

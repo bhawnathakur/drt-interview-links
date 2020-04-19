@@ -1,18 +1,21 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-import { HTTP_INTERCEPTORS } from '@angular/common/http';
+import { BrowserModule } from "@angular/platform-browser";
+import { NgModule } from "@angular/core";
+import { HTTP_INTERCEPTORS, HttpClientModule } from "@angular/common/http";
 
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
+import { AppRoutingModule } from "./app-routing.module";
+import { AppComponent } from "./app.component";
 
-import { AlertModule } from './_alert';
+import { AlertModule } from "./_alert";
 
-import { NavbarComponent } from './navbar/navbar.component';
-import { WelcomeComponent } from './welcome/welcome.component';
-import { AboutComponent } from './about/about.component';
+import { NavbarComponent } from "./navbar/navbar.component";
+import { WelcomeComponent } from "./welcome/welcome.component";
+import { AboutComponent } from "./about/about.component";
 
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+import { CourseListComponent } from "./course-list/course-list.component";
+import { CourserowComponent } from "./courserow/courserow.component";
+import { EditcourseComponent } from "./editcourse/editcourse.component";
+import { ReactiveFormsModule, FormsModule } from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -20,13 +23,19 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     NavbarComponent,
     WelcomeComponent,
     AboutComponent,
+    CourseListComponent,
+    CourserowComponent,
+    EditcourseComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    AlertModule
+    AlertModule,
+    HttpClientModule,
+    ReactiveFormsModule,
+    FormsModule,
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
